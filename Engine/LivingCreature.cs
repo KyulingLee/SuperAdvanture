@@ -12,5 +12,12 @@ namespace Engine
         //Hit Points
         public int CurrentHitPoints { get; set; }
         public int MaximumHitPoints { get; set; }
+
+        //생성자
+        public LivingCreature(int currentHitPoints, int maximumHitPoints)
+        {
+            CurrentHitPoints = currentHitPoints;
+            MaximumHitPoints = maximumHitPoints;
+        }
     }
 }

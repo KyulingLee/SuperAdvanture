@@ -17,5 +17,13 @@ namespace Engine
 
         //Level
         public int Level { get; set; }
+
+        //자식 생성자
+        public Player(int currentHitPoints, int maximumHitPoints, int gold, int experiencePoints, int level) : base (currentHitPoints, maximumHitPoints)
+        {
+            Gold = gold;
+            ExperiencePoints = experiencePoints;
+            Level = level;
+        }
     }
 }

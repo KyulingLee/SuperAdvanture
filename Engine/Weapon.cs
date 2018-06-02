@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
+    //무기
     public class Weapon : Item
     {
         public int MinimumDamage { get; set; }
         public int MaximumDamage { get; set; }
+
+        //자식 생성자
+        public Weapon(int id, string name, string namePlural, int minimumDamage, int maximumDamage) : base(id, name, namePlural)
+        {
+            MinimumDamage = minimumDamage;
+            MaximumDamage = maximumDamage;
+        }
     }
 }

@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
+    //힐링 포션
     public class HealingPotion : Item
     {
         public int AmountToHeal { get; set; }
+
+        //생성자
+        public HealingPotion(int id, string name, string namePlural, int amountToHeal) : base(id, name, namePlural)
+        {
+            AmountToHeal = amountToHeal;
+        }
     }
 }

@@ -18,5 +18,15 @@ namespace Engine
         //보상
         public int RewardExperiencePoints { get; set; }
         public int RewardGold { get; set; }
+
+        //자식 생성자
+        public Monster(int currentHitPoints, int maximumHitPoints, int id, string name, int maximumDamage, int rewardExperiencePoints, int rewardGold) : base (currentHitPoints, maximumHitPoints)
+        {
+            ID = id;
+            Name = name;
+            MaximumDamage = maximumDamage;
+            RewardExperiencePoints = rewardExperiencePoints;
+            RewardGold = rewardGold;
+        }
     }
 }

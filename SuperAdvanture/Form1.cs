@@ -16,6 +16,9 @@ namespace SuperAdvanture
         //플레이어
         private Player player;
 
+        //로케이션
+        Location location;
+
         public Form1()
         {
             InitializeComponent();
@@ -35,6 +38,8 @@ namespace SuperAdvanture
             ExperienceLabel.Text = player.ExperiencePoints.ToString();
             LevelLabel.Text = player.Level.ToString();
 
+            //로케이션 설정
+            
         }
         
     }
