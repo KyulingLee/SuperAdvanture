@@ -19,6 +19,9 @@ namespace Engine
         public int RewardExperiencePoints { get; set; }
         public int RewardGold { get; set; }
 
+        //전리품들
+        public List<LootItem> LootTable { get; set; }
+
         //자식 생성자
         public Monster(int currentHitPoints, int maximumHitPoints, int id, string name, int maximumDamage, int rewardExperiencePoints, int rewardGold) : base (currentHitPoints, maximumHitPoints)
         {
@@ -27,6 +30,8 @@ namespace Engine
             MaximumDamage = maximumDamage;
             RewardExperiencePoints = rewardExperiencePoints;
             RewardGold = rewardGold;
+
+            LootTable = new List<LootItem>();
         }
     }
 }
