@@ -7,19 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Engine;
 
 namespace SuperAdvanture
 {
     public partial class Form1 : Form
     {
+        //플레이어
+        private Player player;
+
         public Form1()
         {
             InitializeComponent();
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            GoldLabel.Text = "123";
+            player = new Player();
+
+            //플레이어의 기본 설정
+            player.CurrentHitPoints = 10;
+            player.MaximumHitPoints = 10;
+            player.Gold = 20;
+            player.ExperiencePoints = 0;
+            player.Level = 1;
+
+            //플레이어의 기본 설정을 화면에 표시
+            HitPointsLabel.Text = player.CurrentHitPoints.ToString();
+            GoldLabel.Text = player.Gold.ToString();
+            ExperienceLabel.Text = player.ExperiencePoints.ToString();
+            LevelLabel.Text = player.Level.ToString();
+
         }
+        
     }
 }
