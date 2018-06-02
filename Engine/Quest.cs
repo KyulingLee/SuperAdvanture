@@ -19,6 +19,10 @@ namespace Engine
         //아이템 보상에 대해서 추가
         public Item RewardItem { get; set; }
 
+        //퀘스트 성공 아이템
+        public List<QuestCompletionItem> QuestCompletionItems { get; set; }
+
+
         //생성자
         public Quest(int id, string name, string descriptopn, int rewardExperiencePoints, int rewardGold)
         {
@@ -27,6 +31,8 @@ namespace Engine
             Description = descriptopn;
             RewardExperiencePoints = RewardExperiencePoints;
             RewardGold = rewardGold;
+
+            QuestCompletionItems = new List<QuestCompletionItem>();
         }
     }
 }
