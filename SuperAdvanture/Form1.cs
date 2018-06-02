@@ -16,5 +16,10 @@ namespace SuperAdvanture
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GoldLabel.Text = "123";
+        }
     }
 }
