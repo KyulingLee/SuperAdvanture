@@ -23,15 +23,9 @@ namespace SuperAdvanture
         {
             InitializeComponent();
 
-            player = new Player();
-
-            //플레이어의 기본 설정
-            player.CurrentHitPoints = 10;
-            player.MaximumHitPoints = 10;
-            player.Gold = 20;
-            player.ExperiencePoints = 0;
-            player.Level = 1;
-
+            //플레이어 생성 - 생성자를 이용한 방식으로 변경.
+            player = new Player(10, 10, 20, 0, 1);
+            
             //플레이어의 기본 설정을 화면에 표시
             HitPointsLabel.Text = player.CurrentHitPoints.ToString();
             GoldLabel.Text = player.Gold.ToString();
