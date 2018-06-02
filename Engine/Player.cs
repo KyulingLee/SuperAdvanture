@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class Player
+    //플레이어
+    public class Player : LivingCreature
     {
-        //Hit Points
-        public int CurrentHitPoints { get; set; }
-        public int MaximumHitPoints { get; set; }
-
         //Gold
         public int Gold { get; set; }
 

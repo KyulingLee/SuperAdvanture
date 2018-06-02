@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class Monster
+    //몬스터
+    public class Monster : LivingCreature
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public int MaximumHitPoints { get; set; }
-        public int CurrentHitPoints { get; set; }
+
+        //최대 데미지
         public int MaximumDamage { get; set; }
+
+        //보상
         public int RewardExperiencePoints { get; set; }
         public int RewardGold { get; set; }
     }
