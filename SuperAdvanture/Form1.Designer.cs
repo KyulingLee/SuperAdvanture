@@ -158,6 +158,7 @@
             this.UseWeaponButton.TabIndex = 11;
             this.UseWeaponButton.Text = "Use";
             this.UseWeaponButton.UseVisualStyleBackColor = true;
+            this.UseWeaponButton.Click += new System.EventHandler(this.UseWeaponButton_Click);
             // 
             // UsePotionButton
             // 
@@ -167,6 +168,7 @@
             this.UsePotionButton.TabIndex = 12;
             this.UsePotionButton.Text = "Use";
             this.UsePotionButton.UseVisualStyleBackColor = true;
+            this.UsePotionButton.Click += new System.EventHandler(this.UsePotionButton_Click);
             // 
             // NorthButton
             // 
@@ -176,6 +178,7 @@
             this.NorthButton.TabIndex = 13;
             this.NorthButton.Text = "North";
             this.NorthButton.UseVisualStyleBackColor = true;
+            this.NorthButton.Click += new System.EventHandler(this.NorthButton_Click);
             // 
             // EastButton
             // 
@@ -185,6 +188,7 @@
             this.EastButton.TabIndex = 14;
             this.EastButton.Text = "East";
             this.EastButton.UseVisualStyleBackColor = true;
+            this.EastButton.Click += new System.EventHandler(this.EastButton_Click);
             // 
             // SouthButton
             // 
@@ -194,6 +198,7 @@
             this.SouthButton.TabIndex = 15;
             this.SouthButton.Text = "South";
             this.SouthButton.UseVisualStyleBackColor = true;
+            this.SouthButton.Click += new System.EventHandler(this.SouthButton_Click);
             // 
             // WestButton
             // 
@@ -203,6 +208,7 @@
             this.WestButton.TabIndex = 16;
             this.WestButton.Text = "West";
             this.WestButton.UseVisualStyleBackColor = true;
+            this.WestButton.Click += new System.EventHandler(this.WestButton_Click);
             // 
             // LocationRichTextBox
             // 

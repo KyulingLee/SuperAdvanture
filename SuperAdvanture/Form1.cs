@@ -35,6 +35,35 @@ namespace SuperAdvanture
             //로케이션 설정
             
         }
-        
+
+        private void UseWeaponButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UsePotionButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NorthButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SouthButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EastButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WestButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
