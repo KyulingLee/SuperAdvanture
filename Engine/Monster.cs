@@ -23,7 +23,7 @@ namespace Engine
         public List<LootItem> LootTable { get; set; }
 
         //자식 생성자
-        public Monster(int currentHitPoints, int maximumHitPoints, int id, string name, int maximumDamage, int rewardExperiencePoints, int rewardGold) : base (currentHitPoints, maximumHitPoints)
+        public Monster(int id, string name, int maximumDamage, int rewardExperiencePoints, int rewardGold, int currentHitPoints, int maximumHitPoints) : base(currentHitPoints, maximumHitPoints)
         {
             ID = id;
             Name = name;
