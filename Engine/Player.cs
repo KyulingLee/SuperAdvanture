@@ -24,7 +24,9 @@ namespace Engine
         //사용자 퀘스트
         public List<PlayerQuest> Quests { get; set; }
 
-        //자식 생성자
+        //사용자의 현재 위치
+        public Location CurrentLocation { get; set; }
+
         public Player(int currentHitPoints, int maximumHitPoints, int gold, int experiencePoints, int level) : base (currentHitPoints, maximumHitPoints)
         {
             Gold = gold;

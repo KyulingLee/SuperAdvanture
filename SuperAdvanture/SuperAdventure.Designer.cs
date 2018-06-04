@@ -1,6 +1,6 @@
 ﻿namespace SuperAdvanture
 {
-    partial class Form1
+    partial class SuperAdventure
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -262,7 +262,7 @@
             this.QuestsDataGridView.Size = new System.Drawing.Size(312, 189);
             this.QuestsDataGridView.TabIndex = 20;
             // 
-            // Form1
+            // SuperAdventure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -288,7 +288,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "SuperAdventure";
             this.Text = "Kyuling\'s RPG Game";
             ((System.ComponentModel.ISupportInitialize)(this.InventoryDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuestsDataGridView)).EndInit();
